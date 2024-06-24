@@ -1,0 +1,53 @@
+<!-- services.html -->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - PetShop Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>PetShop Online</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produtos</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="register.html">Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Serviços</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Banho e Tosa - Pequeno Porte</h3>
+                <p>Descrição - Preço</p>
+            </div>
+            <div class="service-item">
+                <h3>Banho e Tosa - Grande Porte</h3>
+                <p>Descrição - Preço</p>
+            </div>
+        </div>
+        <h2>Agendamento de Serviço</h2>
+        <form action="submit_service.html" method="POST">
+            <label for="service">Escolha o Serviço:</label>
+            <select id="service" name="service">
+                <option value="banho_pequeno">Banho e Tosa - Pequeno Porte</option>
+                <option value="banho_grande">Banho e Tosa - Grande Porte</option>
+            </select>
+            <label for="date">Data do Agendamento:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="tele-busca">Tele-busca:</label>
+            <input type="checkbox" id="tele-busca" name="tele-busca">
+            <button type="submit">Agendar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 PetShop Online. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
